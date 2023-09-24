@@ -1,0 +1,878 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    background-color:aliceblue;
+}
+*{
+   box-sizing: border-box;
+   /* margin: 0;
+   padding: 0; */
+}
+.container{
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/furniture-store-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 70px;
+    position: relative;
+    
+    
+   
+}
+.container2{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.489);
+    
+}
+.nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    height: 100px;
+    /* display: flex;
+    justify-content: space-around; */
+    z-index: 50;
+    border-bottom: 0.5px solid gray;
+    
+
+}
+
+
+.logo1 {
+    margin-top: -10px;
+    float: left;
+    margin-left: 150px;
+}
+.list{
+    margin-top: 10px;
+    float: right;
+    margin-right: 150px;
+    
+    
+}
+.li1{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+.li1 a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.li1 div{
+    width: 0%;
+    margin-top: 8px;
+    height: 5px;
+    
+ }
+ .li1:hover div{
+     background-color: #d4af37;
+     width: 100%;
+     
+     
+     transition: 1s all;
+ }
+ .li1 i{
+    color: #d4af37;
+ }
+ .list2 li{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 10%;
+    visibility: hidden;
+    background-color: goldenrod;
+    text-align: center;
+    list-style: none;
+    border: none;
+    
+    
+ }
+ .dropdown:hover .list2 li{
+    transition: all 2s;
+    position: absolute;
+    visibility: visible;
+    margin-top: 15px;
+    
+ }
+ 
+.par{
+    width: 100%;
+    position: absolute;
+    top:300px ;
+
+}
+ .par .line{
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color: #d4af37;
+    position: absolute;
+    top: 7px;
+    left: 150px;
+ }
+ .par .p{
+     display: inline-block;
+     color: #d4af37;
+     position: absolute;
+     
+     left: 210px;
+     
+ }
+ .par h1{
+    margin-top: 100px;
+    margin-left: 150px;
+    color: white;
+    font-size: 3em;
+    font-weight:bolder;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .par .p1{
+    color: white;
+    font-size: large;
+    margin-left: 150px;
+    line-height: 1.5em;
+ }
+ .par button{
+    color: white;
+    width: 140px;
+    height: 50px;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
+
+ /*...........................section 1 .............................*/
+
+
+
+ .sec1{
+    margin-top: 70px;
+    
+    overflow: auto;
+ }
+ .img1 {
+    float: left;
+    margin: 0 100px 0 150px;
+ }
+ .par2{
+    float: left;
+ }
+ .line2{
+    display: inline-block;
+    
+    margin-right: 5px;
+     width: 100px; 
+     height: 2px; 
+     background-color: #d4af37;
+ }
+ .head1{
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+ }
+ .text2{
+    line-height: 1.5em;
+    font-size: large;
+ }
+ .par2 button {
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: goldenrod;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+ button:hover{
+    background-color: #d4af37da;
+ }
+ .clr{
+    clear: both;
+ }
+ .products{
+    width: 100%;
+    overflow: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
+ .pro{
+    float: left;
+    margin-right: 20px;
+    width: 16%;
+    margin-left: 100px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    
+    
+ }
+ .pro img{
+    width: 100%;
+ }
+ 
+
+ .pro::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+
+}
+.pro:hover::after{
+    height: 100%;
+    background-color: #d4af37;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+ 
+
+ 
+ 
+ .onsale{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d4af37;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+   
+    
+ }
+ 
+ /*..............section2............*/
+
+ .sec2{
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+    
+ }
+ .sec2 .img2 , .img3 , .img4 , .img5{
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+    
+
+ }
+ .sec2 .img2 {
+    background-image: url("../images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ }
+ .sec2 .img3 {
+    background-image: url("../images/images (1).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .sec2 .img4 {
+    background-image: url("../images/images (2).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .sec2 .img5 {
+    background-image: url("../images/images (3).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+ }
+ .icons{
+   position: absolute;
+   right: 120px;
+   top: 230px;
+   z-index: 5;
+   width: 150px;
+   height: 100px;
+   
+   text-align: center;
+   visibility: hidden;
+   
+
+  
+   
+
+   
+ }
+ .icons i{
+   
+   color: gold;
+   font-size: 20px;
+   display: block;
+   display: inline-block;
+   margin-right: 10px;
+ }
+ .img2:hover .icons{
+   visibility: visible;
+   right: 120px;
+   top: 220px;
+   transition: 1s;
+   
+   
+
+ }
+ .img3:hover .icons{
+   visibility: visible;
+   right: 120px;
+   top: 220px;
+   transition: 1s;
+   
+   
+
+ }
+ .img4:hover .icons{
+   visibility: visible;
+   right: 120px;
+   top: 220px;
+   transition: 1s;
+   
+ }
+ .img5:hover .icons{
+   visibility: visible;
+   right: 120px;
+   top: 220px;
+   transition: 1s;
+   
+ }
+ .sec2 a{
+    text-decoration: none;
+ }
+ .sec2 p{
+         position: absolute;
+         bottom: 30px;
+         left: 50px;
+         font-size: 2em;
+         
+         color: white;
+         font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+ .sec2 p:hover{
+    transition: all 1s;
+    color: goldenrod;
+ }
+
+ .sec2 .img2:hover .shadow{
+    background-color: rgba(0, 0, 0, 0.603);
+
+ }
+ .sec2 .img3:hover .shadow{
+    background-color: rgba(0, 0, 0, 0.603);
+
+ }
+ .sec2 .img4:hover .shadow{
+    background-color: rgba(0, 0, 0, 0.603);
+
+ }
+ .sec2 .img5:hover .shadow{
+    background-color: rgba(0, 0, 0, 0.603);
+
+ }
+
+
+ /*...................section 3 ................. */
+
+.sec3{
+    width: 100%;
+    height: 1200px;
+    margin-bottom: 250px;
+}
+ .top{
+    text-align: center;
+    width: 100%;
+    height:30% ;
+    margin-bottom: 100px;
+ }
+ .line3{
+    display: inline-block;
+    
+    margin-right: 5px;
+     width: 100px; 
+     height: 2px; 
+     background-color: #d4af37;
+ }
+ .head2{
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+ .top button{
+    color: white;
+    width: 220px;
+    height: 50px;
+    background-color: goldenrod;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+ .medium {
+   margin-bottom: 250px;
+ }
+.pro8{
+ float: left;
+ margin-right: 20px;
+ width: 16%;
+ margin-left: 100px;
+ position: relative;
+ text-align: center;
+ padding-bottom: 20px;
+ margin-bottom: 80px;
+
+}
+ .pro8:hover{
+   background-color:white;
+   transition: all 1s;
+   transform: scale(1.2);
+   box-shadow: inset;
+   
+   
+ }
+ .pro8:hover .icon3{
+   visibility: visible;
+   z-index: 5;
+   right: 10px;
+   top: 10px;
+   transition: 1s;
+   
+  
+ }
+ .pro8 img{
+   width: 80%;
+ }
+ .icon3{
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   visibility: hidden;
+  
+   
+ 
+ }
+ .icon3 i{
+   display: block;
+   margin: 10px 5px 10px 5px;
+   background-color: white;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   line-height: 35px;
+   cursor: pointer;
+
+ }
+
+
+
+
+
+
+
+/*............section 4............*/
+
+
+
+
+ .sec4{
+   margin-bottom: 200px;
+   width: 100%;
+   height: 600px;
+   position: relative;
+   
+ }
+ .bottom{
+    
+    width: 100%;
+    height: 100%auto;
+    
+
+
+ }
+ .description h6{
+   opacity: 0.4;
+   font-size: 1.5em;
+ }
+ .right{
+    width: 60%;
+    height: 80%;
+   position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 200px;
+ }
+ .right img{
+    width: 100%;
+    height: 100%;
+ }
+ .left{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    
+    height: 300px;
+    width: 500px;
+    padding: 10px 10px 10px 50px;
+    line-height: 1.5em;
+    top: 300px;
+    left: 350px;
+ }
+ .head4{
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+ .left button{
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: goldenrod;
+    width: 150px;
+    height: 40px;
+    border: none;
+ }
+
+ /*.........section 5 .......*/
+
+ .sec5 {
+   width: 80%;
+   height: 400px;
+   margin: auto;
+   margin-top: 150px;
+   margin-bottom: 300px;
+}
+
+.all{
+   height: 400px;
+   width: 30%;
+   float: left;
+   
+   box-sizing: border-box;
+   margin-bottom: 50px;
+   
+}
+.empt{
+ margin: auto;
+ margin-left: 40%;
+ text-align: center;
+}
+.empt li{
+   
+   font-size: 2em;
+   color: gray;
+   
+   
+   
+}
+.empt li:hover{
+   color: gold;
+}
+.client-item {
+  
+   background-color: rgb(175, 174, 174);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px  19px;
+   text-align: center;
+  
+   height: 350px;
+   position: relative;
+
+   
+}
+.dd {
+   margin: 0px  5%;
+}
+
+.client-img {
+   width: 94%;
+   margin: auto;
+   position: relative;
+   
+}
+.client-img  img {
+   width: 100%;
+}
+.client-overley {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.61) ;
+   
+   visibility: hidden;
+}
+.client-item:hover .client-overley{
+   visibility: visible;
+   
+}
+.client-overley  a {
+   display: block;
+   width: 40px;
+   height: 40px;
+   background-color: goldenrod;
+   color: #fff;
+   font-size: 23px;
+   margin-left: auto ;
+}
+.client-overley  a  i  {
+   line-height: 40px ;
+}
+/* .round{
+position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.client-item:hover .round{
+   position: absolute;
+   height: 350px;
+   top: 0;
+   z-index: 3;
+   transition: 1s all;
+   
+} */
+.client-item::after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 0;
+   top: 0;
+   left: 0;
+   background-color:rgba(0, 0, 0, 0.692);
+   opacity: 0;
+   transition: all 1s;
+
+}
+.client-item:hover::after{
+   height: 100%;
+   width: 100%;
+   
+   opacity: 0.5;
+   
+}
+
+
+
+/*..............start of section 6 ..............*/
+ 
+.sec6{
+   width: 100%;
+   margin-bottom:100px ;
+   
+}
+.line4{
+   height: 4px;
+   width: 100px;
+   margin: auto;
+   background-color: gold;
+   margin-top: -10px;
+   margin-bottom: 100px;
+}
+.sec6 .image{
+   width: 100%;
+   height: 400px;
+   margin-top: 40px;
+   background-attachment: fixed;
+   background-image: url("../images/factory.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.advantages {
+   margin-top: 100px;
+   
+}
+.f{
+   float: left;
+   width: 15%;
+   margin: 0 5%;
+}
+.clr{
+   clear: both;
+}
+
+
+
+/*..............start of section 7 ..............*/
+
+.sec6{
+   width: 100%;
+   
+   
+}
+.subscribe{
+   width: 100%;
+   height: 400px;
+   
+}
+.back-subscribe{
+   height: 100%;
+   width: 50%;
+   float: left;
+   background-image: url("../images/image7.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.email-subscribe{
+   height: 100%;
+   width: 50%;
+   float: left;
+   background-color: white;
+}
+.line6{
+   display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color: #d4af37;
+    margin-right: 5px;
+    
+    
+}
+.gg{
+   margin-left: 50px;
+   margin-top: 60px;
+}
+.form1{
+   margin-left: 50px;
+}
+.sub{
+   display: inline;
+   width: 120px;
+   height: 40px;
+   background-color: gold;
+   color: black;
+
+   
+}
+
+.in{
+   width: 300px;
+   height: 40px;
+}
+.sub:hover{
+   color: white;
+}
+
+.in:hover{
+   border: gold solid 2px;
+}
+
+
+/*..............Footer ..............*/
+
+
+
+.foot{
+   box-sizing: border-box;
+   background-color: black;
+   height: 500px;
+   width: 100%;
+   
+}
+.foot-top{
+   width: 100%;
+   height: 75%;
+   text-align: center;
+}
+.top-content{
+   float: left;
+   
+   height: 100%;
+ 
+   line-height: 30px;
+
+}
+.aa{
+width: 20%;
+margin: 10px 10px 30px 70px;
+}
+.bb{
+width: 15%;
+margin: 50px 10px 30px 50px;
+}
+.cc{
+width: 15%;
+margin: 50px 10px 30px 50px;
+}
+.ee{
+width: 20%;
+margin: 50px 10px 30px 50px;
+}
+.top-content a{
+   text-decoration: none;
+   color: white;
+   display: block;
+   
+
+}
+.top-content p{
+   color:white ;
+}
+.top-content h2{
+   color: white;
+}
+.top-content a i{
+   float: left;
+   margin-right: 10px;
+   color: white;
+   background-color: rgba(169, 169, 169, 0.253);
+   text-align: center;
+   font-size: 1.2em;
+width: 30px;
+height: 30px;
+line-height: 30px;
+}
+.icons5{
+   margin-left: 100px;
+}
+.icons5 i:hover{
+   background-color: goldenrod;
+}
+  .foot-bottom{
+   width: 100%;
+   height: 25%;
+  }
+.left1{
+   float: left;
+   margin-left: 80px;
+   
+}
+.right1 {
+   float: right;
+   margin-right: 80px;
+}
+.foot-bottom p{
+   color: white;
+   font-size: 1.5em;
+}
+
